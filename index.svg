@@ -1,0 +1,11 @@
+<!--
+    This File is to enable embedding
+    the index.html in the README.md
+-->
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+      <iframe src="https://ks-htk.github.io/js-radar/index.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </body>
+  </foreignObject>
+</svg>
