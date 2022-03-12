@@ -1,0 +1,59 @@
+.ribbon {
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 12em;
+  height: 12em;
+  font-size: 15px;
+  text-decoration: none;
+  text-indent: -1000px;
+  pointer-events: none;
+}
+
+.ribbon:before,
+.ribbon:after {
+  position: absolute;
+  display: block;
+  width: 15.8em;
+  height: 1.5em;
+
+  top: 3em;
+  left: -3em;
+
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.ribbon:before {
+  content: "";
+  padding: 0.4em 0;
+  background-color: rgb(20, 120, 20);
+  pointer-events: auto;
+}
+
+.ribbon:after {
+  content: attr(title);
+
+  color: white;
+  font: 800 1em Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  text-indent: 0;
+
+  padding: 0.15em 0;
+  margin: 0.15em 0;
+
+  border-width: 0.08em 0;
+  border-style: dotted;
+  border-color: white;
+}
