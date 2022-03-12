@@ -2,8 +2,8 @@ let increment = 0.01;
 let phi = 0;
 
 //switching trough each animation
-let current = 0;
-let swt = false;
+let current = -1;
+let swt = true;
 let switcher = [
   heart,
   rand,
@@ -88,7 +88,7 @@ function ngon(n, size = 150) {
 let multigon_count = 2;
 let inc = false;
 function multigon() {
-  if (phi <= increment) {
+  if (phi < increment) {
     if (multigon_count < 12) swt = false; //prevent switcher from incrementing
     if (inc) {
       multigon_count = (multigon_count + 1) % 13;
@@ -111,7 +111,7 @@ let y = 0;
 let lines = [];
 let a = 0;
 function draw() {
-  if (phi <= increment) {
+  if (phi < increment) {
     if (swt) {
       swt = false;
       current = (current + 1) % switcher.length;
